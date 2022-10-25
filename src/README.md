@@ -1,4 +1,4 @@
-# kotlin
+# Transforming
 SQUARE
 Center of the square: 1 5
 Center of the square after CounterClockWise rotation: 0 1
