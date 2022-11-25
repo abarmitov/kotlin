@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TestApp</string>
+    <string-array name="films">
+        <item>Matrix</item>
+        <item>BRAT</item>
+        <item>Petrushin</item>
+        <item>Shabalin</item>
+    </string-array>
+</resources>
