@@ -11,23 +11,28 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         array = resources.getStringArray(R.array.films)
+        array.shuffle()
     }
 
     var count: Int = 0
 
     fun onClick(v: View) {
+
         val film = findViewById<TextView>(R.id.films)
         film.text = array[count]
+
         if (count == 3)
-            {
-                count = 0}
+        {
+            film.text = array[count] + " lastfilm"}
         else
-            {
-                count++
+        {
+            count++
         }
     }
+    
     fun onClick_reset(v: View){
         count = 0
+        array.shuffle()
         onClick(v)
     }
 }
